@@ -114,6 +114,8 @@ The figure below shows the percentage of ranking overlap for TF-
 IDF and RoBERTa amongst all reviewers. 
 ![Overlap!](/img/f8overlap.png)
 
+<img src="/img/f8overlap.png" width="200" height="100">
+
 TF-IDF has sig-
 nificantly better performance than RoBERTa with an aver-
 age overlap of approximately 73%, whereas RoBERTa has
