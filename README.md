@@ -50,7 +50,7 @@ the global component IDF, the log of the ratio of the number of abstracts divide
 word. This metric effectively computes a normalized bag
 of words vector that adjusts the scores based on how common a word is across the corpus of abstracts. The output of
 the TFIDF model are embeddings that are used to create the
-cosine similarity matrix betIen each abstract.
+cosine similarity matrix between each abstract.
 
 ### Transformer
 For the transformer model, I used the ‘sentence
@@ -80,12 +80,14 @@ selected “Reinforcement Learning with Augmented Data”
 as the parent paper to generate recommendations against
 and to compare models.
 To measure success, I retrieved the top 20 most similar
-embeddings and their respective abstracts as shown in figures 9 and 10. To evaluate the quality of a model’s recommendation, a subject matter expert (us) received a randomized list of the top 20 and made their own top 10 ranking.
+embeddings and their respective abstracts as shown the figures below. To evaluate the quality of a model’s recommendation, a subject matter expert (students) received a randomized list of the top 20 and made their own top 10 ranking.
 These two lists are compared to see how much overlap
 there was in papers and ranking. If there was significant
 overlap, then this model did a good job of serving recommendations in order of relevance. To compare the quality
-of recommendations between models, I assigned a relevancy score betIen 1 and 5 to each recommendation and
+of recommendations between models, I assigned a relevancy score between 1 and 5 to each recommendation and
 compared the average relevance for a model.
+<img src="https://github.com/cce21/DeepLearningArxivPaperRecommender/blob/main/img/Recommendations.png">
+
 
 ### Analysis of Results
 The figure below shows the percentage of ranking overlap for TF
@@ -99,7 +101,7 @@ ing.”
 
 The figure below shows the distribution of relevancy scores for
 both models amongst the reviewers. 
-<img src="https://github.com/cce21/DeepLearningArxivPaperRecommender/blob/img/f6distrelevancy.png" width="500">
+<img src="https://github.com/cce21/DeepLearningArxivPaperRecommender/blob/main/img/f6distrelevancy.png" width="500">
 
 
 
@@ -127,9 +129,9 @@ tic Neighbor Embedding) plots for the two models.
 
 tSNE
 reduces the embeddings to two dimensions by calculating
-a joint Gaussian probability distribution betIen each embedding in the original highdimensional space. Then it
-creates a probability distribution betIen embeddings in
-a two-dimensional space using cosine similarity and minimizes the KL divergence betIen the probability distribu
+a joint Gaussian probability distribution between each embedding in the original highdimensional space. Then it
+creates a probability distribution between embeddings in
+a two-dimensional space using cosine similarity and minimizes the KL divergence between the probability distribu
 tions. Each point in the plots represents an abstract
 embedding reduced to two dimensions. The red points high
 light the top 10 most similar documents to the first entry of
