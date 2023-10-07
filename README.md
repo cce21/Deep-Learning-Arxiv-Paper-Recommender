@@ -34,11 +34,11 @@ The dataset is from Kaggle and provided by [ArXiv](https://www.kaggle.com/datase
 It contains 1.7M entries and is a JSON document. Each
 entry contains important information such as author, title,
 category, abstract, and comments. The following
-categories Ire used: cs.LG (Machine Learning), cs.NE (Neural and
+categories are used: cs.LG (Machine Learning), cs.NE (Neural and
 Evolutionary Computing) and cs.LG and cs.NE with a to-
 tal of 112,608 entries. The pandas data frame consists of
 112,608 papers with 5 columns (id, abstract, title, authors,
-and categories). Since there Ire processing time constraints, I selected 15,000 samples and
+and categories). Since there are processing time constraints, I selected 5,000 samples and
 preprocessed the abstracts with lemmatization and the re-
 moval of capitalization, numerical factors, punctuation, and
 stop words.
@@ -71,7 +71,7 @@ For the transformer model, I used the ‘sentence-
 transformers’ python library for the sentence BERT model
 and chose the ”all-distilroberta-v1” pretrained transformer
 model to generate embeddings for the ArXiv research ab-
-stracts, as described in [1]. I chose this model because
+stracts. I chose this model because
 of the high-performance scores in generating sentence em-
 beddings. The transformer mapped each abstract to a 768-
 dimensional dense vector space that was trained on a 1B
@@ -79,7 +79,7 @@ sentence pair dataset with a contrastive learning objective,
 where the model was given one of the sentences from the
 pair and predicted which sentence was the pairing given
 a random sample of sentences. Similar to the other mod-
-els, the preprocessed abstracts Ire used as the input to the
+els, the preprocessed abstracts are used as the input to the
 model and the output is sentence embeddings, which are
 used to create a cosine similarity matrix that can generate
 recommendations.
@@ -101,7 +101,7 @@ embeddings and their respective abstracts as shown in fig-
 ures 9 and 10. To evaluate the quality of a model’s recom-
 mendation, a subject matter expert (us) received a random-
 ized list of the top 20 and made their own top 10 ranking.
-These two lists Ire compared to see how much overlap
+These two lists are compared to see how much overlap
 there was in papers and ranking. If there was significant
 overlap, then this model did a good job of serving recom-
 mendations in order of relevance. To compare the quality
@@ -110,18 +110,20 @@ vancy score betIen 1 and 5 to each recommendation and
 compared the average relevance for a model.
 
 ### Analysis of Results
-Figure 8 shows the percentage of ranking overlap for TF-
-IDF and RoBERTa amongst all revieIrs. TF-IDF has sig-
+The figure below shows the percentage of ranking overlap for TF-
+IDF and RoBERTa amongst all reviewers. 
+![Overlap!](/img/f8overlap.png)
+TF-IDF has sig-
 nificantly better performance than RoBERTa with an aver-
 age overlap of approximately 73%, whereas RoBERTa has
 an average overlap of 30%. This makes sense because TF-
-IDF matches for relevant words and revieIrs ranked pa-
+IDF matches for relevant words and reviewers ranked pa-
 pers highly that had key phrases like “reinforcement learn-
 ing.” Interestingly, both models recommended the same
 three papers as shown in figure 5 with their respective rank-
 ings.
 Figure 6 shows the distribution of relevancy scores for
-both models amongst the revieIrs. The Transformer has a
+both models amongst the reviewers. The Transformer has a
 significantly larger share of low scores, whereas the TF-IDF
 had many papers score highly. Figure 7 shows the average
 relevance of the models; it’s clear that TF-IDF gives many
