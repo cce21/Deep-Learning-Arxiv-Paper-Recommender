@@ -13,8 +13,7 @@ a paper with very relevant content but no citations. Experimental results demons
 relevant papers.
 
 ### Approach
-This ArXiv paper recommender pro
-vides users with the most similar papers compared to a paper of interest. The approach involves loading and cleaning
+This ArXiv paper recommender provides users with the most similar papers compared to a paper of interest. The approach involves loading and cleaning
 the abstracts for a specific ArXiv category, experimenting
 with using several deep learning and NLP models to create embedding representations for each of the abstracts, and
 then ranking the similarity of documents in comparison to
