@@ -113,20 +113,29 @@ compared the average relevance for a model.
 The figure below shows the percentage of ranking overlap for TF-
 IDF and RoBERTa amongst all reviewers. 
 ![Overlap!](/img/f8overlap.png)
+
 TF-IDF has sig-
 nificantly better performance than RoBERTa with an aver-
 age overlap of approximately 73%, whereas RoBERTa has
 an average overlap of 30%. This makes sense because TF-
 IDF matches for relevant words and reviewers ranked pa-
 pers highly that had key phrases like “reinforcement learn-
-ing.” Interestingly, both models recommended the same
-three papers as shown in figure 5 with their respective rank-
-ings.
-Figure 6 shows the distribution of relevancy scores for
-both models amongst the reviewers. The Transformer has a
+ing.” 
+
+The figure below shows the distribution of relevancy scores for
+both models amongst the reviewers. 
+![Overlap!](/img/f6distrelevancy.png)
+
+
+The Transformer has a
 significantly larger share of low scores, whereas the TF-IDF
-had many papers score highly. Figure 7 shows the average
-relevance of the models; it’s clear that TF-IDF gives many
+had many papers score highly. 
+
+The figure below shows the average
+relevance of the models
+![Overlap!](/img/f7avgrelevance.png)
+
+It’s clear that TF-IDF gives many
 more relevant results than RoBERTa. This makes sense be-
 cause the limited dataset gives a bias towards TF-IDF since
 it’s easier to match keywords than to make connections,
@@ -134,20 +143,25 @@ which would require much more data for the transformer.
 To demonstrate this, the TF-IDF results have the word “re-
 inforcement” appear 43 times compared with 28 times for
 the RoBERTa results.
-Figures 4 and 3 show the t-SNE (t-Distributed Stochas-
-tic Neighbor Embedding) plots for the two models. t-SNE
+The graphs below show the t-SNE (t-Distributed Stochas-
+tic Neighbor Embedding) plots for the two models. 
+
+![Overlap!](/img/tsneroberta.png)
+![Overlap!](/img/tsnetfidf.png)
+
+t-SNE
 reduces the embeddings to two dimensions by calculating
 a joint Gaussian probability distribution betIen each em-
 bedding in the original high-dimensional space. Then it
 creates a probability distribution betIen embeddings in
 a two-dimensional space using cosine similarity and min-
 imizes the KL divergence betIen the probability distribu-
-tions [10]. Each point in the plots represents an abstract
+tions. Each point in the plots represents an abstract
 embedding reduced to two dimensions. The red points high-
 light the top 10 most similar documents to the first entry of
 our ArXiv paper dataset. The most similar documents are
 very close to each other, displaying that the t-SNE plots vi-
-sualize the results of the cosine similarity matrix Ill. Still,
+sualize the results of the cosine similarity matrix well. Still,
 it will not be exact since they are different methods to rep-
 resent similarity.
 Qualitatively, the TF-IDF recommendation results have a
@@ -158,7 +172,7 @@ tIen documents. For example, the terms “Reinforcement
 Learning,” “algorithm,” “efficient,” and “performance” are
 shared across many of the recommendations, and it turns
 out this is an excellent way to discover related papers.
-RoBERTa, hoIver, gives many results that have a sem-
+RoBERTa, however, gives many results that have a sem-
 blance of relevancy such as general machine learning pa-
 pers, but because it doesn’t have the focus on keywords, the
 relevancy suffers if more targeted results are desired.
