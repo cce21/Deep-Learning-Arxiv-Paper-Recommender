@@ -112,9 +112,8 @@ compared the average relevance for a model.
 ### Analysis of Results
 The figure below shows the percentage of ranking overlap for TF-
 IDF and RoBERTa amongst all reviewers. 
-![Overlap!](/img/f8overlap.png)
+![Overlap!](/img/f8overlap.png =250x250)
 
-<img src="/img/f8overlap.png" width="200" height="100">
 
 TF-IDF has sig-
 nificantly better performance than RoBERTa with an aver-
@@ -148,7 +147,7 @@ the RoBERTa results.
 The graphs below show the t-SNE (t-Distributed Stochas-
 tic Neighbor Embedding) plots for the two models. 
 
-![Overlap!](/img/tsneroberta.png)
+![Overlap!](/img/tsneroberta.png =250x250)
 ![Overlap!](/img/tsnetfidf.png)
 
 t-SNE
