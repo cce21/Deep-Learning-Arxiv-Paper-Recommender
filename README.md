@@ -124,8 +124,7 @@ ing.”
 
 The figure below shows the distribution of relevancy scores for
 both models amongst the reviewers. 
-<img src="https://github.com/cce21/Deep-Learning-Arxiv-Paper-Recommender/blob/main/img/f6distrelevancy.png
-" width="500">
+<img src="https://github.com/cce21/Deep-Learning-Arxiv-Paper-Recommender/blob/45862470ecbd7a336b6f3934df2a67538d2b7cdc/img/f6distrelevancy.png" width="500">
 
 
 
