@@ -99,7 +99,7 @@ ing.”
 
 The figure below shows the distribution of relevancy scores for
 both models amongst the reviewers. 
-<img src="https://github.com/cce21/DeepLearningArxivPaperRecommender/blob/45862470ecbd7a336b6f3934df2a67538d2b7cdc/img/f6distrelevancy.png" width="500">
+<img src="https://github.com/cce21/DeepLearningArxivPaperRecommender/blob/img/f6distrelevancy.png" width="500">
 
 
 
@@ -123,7 +123,7 @@ The graphs below show the tSNE (tDistributed Stochas
 tic Neighbor Embedding) plots for the two models. 
 
 <img src="https://github.com/cce21/Deep-Learning-Arxiv-Paper-Recommender/blob/main/img/tsneroberta.png" width="500">
-<img src="https://github.com/cce21/DeepLearningArxivPaperRecommender/blob/e00b1f3ebe2a1b8d3868f0cfbb5730563219d861/img/tsnetfidf.png" width="500">
+<img src="https://github.com/cce21/Deep-Learning-Arxiv-Paper-Recommender/blob/main/img/tsnetfidf.png" width="500">
 
 tSNE
 reduces the embeddings to two dimensions by calculating
