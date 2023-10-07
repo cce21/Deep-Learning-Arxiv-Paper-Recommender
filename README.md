@@ -86,7 +86,7 @@ there was in papers and ranking. If there was significant
 overlap, then this model did a good job of serving recommendations in order of relevance. To compare the quality
 of recommendations between models, I assigned a relevancy score between 1 and 5 to each recommendation and
 compared the average relevance for a model.
-<img src="https://github.com/cce21/DeepLearningArxivPaperRecommender/blob/main/img/Recommendations.png">
+<img src="https://github.com/cce21/Deep-Learning-Arxiv-Paper-Recommender/blob/main/img/Recommendations.png">
 
 
 ### Analysis of Results
@@ -101,7 +101,7 @@ ing.”
 
 The figure below shows the distribution of relevancy scores for
 both models amongst the reviewers. 
-<img src="https://github.com/cce21/DeepLearningArxivPaperRecommender/blob/main/img/f6distrelevancy.png" width="500">
+<img src="https://github.com/cce21/Deep-Learning-Arxiv-Paper-Recommender/blob/main/img/f6distrelevancy.png" width="500">
 
 
 
