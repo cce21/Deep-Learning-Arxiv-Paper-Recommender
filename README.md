@@ -114,7 +114,6 @@ The figure below shows the percentage of ranking overlap for TF-
 IDF and RoBERTa amongst all reviewers. 
 ![Overlap!](/img/f8overlap.png)
 
-
 TF-IDF has sig-
 nificantly better performance than RoBERTa with an aver-
 age overlap of approximately 73%, whereas RoBERTa has
@@ -125,7 +124,9 @@ ing.”
 
 The figure below shows the distribution of relevancy scores for
 both models amongst the reviewers. 
-![Overlap!](/img/f6distrelevancy.png)
+<img src="https://github.com/cce21/Deep-Learning-Arxiv-Paper-Recommender/blob/main/img/f6distrelevancy.png
+" width="500">
+
 
 
 The Transformer has a
