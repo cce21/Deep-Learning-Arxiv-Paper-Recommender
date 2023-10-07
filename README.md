@@ -147,8 +147,8 @@ the RoBERTa results.
 The graphs below show the t-SNE (t-Distributed Stochas-
 tic Neighbor Embedding) plots for the two models. 
 
-<img src="[https://your-image-url.type](https://github.com/cce21/Deep-Learning-Arxiv-Paper-Recommender/blob/acff43e838b369c3cd897498bfba5ae2d96c229f/img/tsneroberta.png
-)" width="100" height="100">
+<img src="https://your-image-url.type](https://github.com/cce21/Deep-Learning-Arxiv-Paper-Recommender/blob/acff43e838b369c3cd897498bfba5ae2d96c229f/img/tsneroberta.png" width="100" height="100">
+
 ![Overlap!](/img/tsnetfidf.png)
 
 t-SNE
