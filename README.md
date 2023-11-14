@@ -57,8 +57,7 @@ For the transformer model, I used the ‘sentence
 transformers’ python library for the sentence BERT model
 and chose the ”alldistilrobertav1” pretrained transformer
 model to generate embeddings for the ArXiv research abstracts. I chose this model because
-of the highperformance scores in generating sentence em
-beddings. The transformer mapped each abstract to a 768
+of the high performance scores in generating sentence embeddings. The transformer mapped each abstract to a 768
 dimensional dense vector space that was trained on a 1B
 sentence pair dataset with a contrastive learning objective,
 where the model was given one of the sentences from the
